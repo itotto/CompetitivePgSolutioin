@@ -27,7 +27,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "r6_0413_assignment_E", "202
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "r6_0413_assignment_F", "20240413\r6_0413_assignment_F\r6_0413_assignment_F.csproj", "{6F40806C-0496-4DB6-9432-CE5E08610358}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "r6_0413_assignment_G", "..\CompetitivePgSolutioin20240413\r6_0413_assignment_G\r6_0413_assignment_G.csproj", "{6DE9231F-77D0-41FD-81E5-5786D41D867D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "r6_0413_assignment_G", "20240413\r6_0413_assignment_G\r6_0413_assignment_G.csproj", "{6DE9231F-77D0-41FD-81E5-5786D41D867D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
