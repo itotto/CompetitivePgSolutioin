@@ -37,6 +37,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A01_The_First_Problem", "bo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A02_Linear_Search", "books\Golden_rules_of_competitive_programming\A02_Linear_Search\A02_Linear_Search.csproj", "{442183A5-8B0F-4332-8947-FFF92F96DB2A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A03_Two_Cards", "books\Golden_rules_of_competitive_programming\A03_Two_Cards\A03_Two_Cards.csproj", "{C3AFC913-5869-4DF3-B276-1391D04C2DB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A04_BinaryRepresentation1", "books\Golden_rules_of_competitive_programming\A04_BinaryRepresentation1\A04_BinaryRepresentation1.csproj", "{0D9BC01F-D8D4-4049-998C-62557D0281E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,6 +99,14 @@ Global
 		{442183A5-8B0F-4332-8947-FFF92F96DB2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{442183A5-8B0F-4332-8947-FFF92F96DB2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{442183A5-8B0F-4332-8947-FFF92F96DB2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3AFC913-5869-4DF3-B276-1391D04C2DB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3AFC913-5869-4DF3-B276-1391D04C2DB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3AFC913-5869-4DF3-B276-1391D04C2DB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3AFC913-5869-4DF3-B276-1391D04C2DB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D9BC01F-D8D4-4049-998C-62557D0281E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D9BC01F-D8D4-4049-998C-62557D0281E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D9BC01F-D8D4-4049-998C-62557D0281E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D9BC01F-D8D4-4049-998C-62557D0281E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -114,6 +126,8 @@ Global
 		{114EE7F7-E4DE-4865-9025-D3B2CDA05EEE} = {02956A1D-F516-48E7-A007-588C0C7FF0BC}
 		{4BD4661C-3A38-4DFC-9C73-05F9E80DD801} = {114EE7F7-E4DE-4865-9025-D3B2CDA05EEE}
 		{442183A5-8B0F-4332-8947-FFF92F96DB2A} = {114EE7F7-E4DE-4865-9025-D3B2CDA05EEE}
+		{C3AFC913-5869-4DF3-B276-1391D04C2DB6} = {114EE7F7-E4DE-4865-9025-D3B2CDA05EEE}
+		{0D9BC01F-D8D4-4049-998C-62557D0281E1} = {114EE7F7-E4DE-4865-9025-D3B2CDA05EEE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E61BC755-28EF-4D04-B147-54A75086C516}
