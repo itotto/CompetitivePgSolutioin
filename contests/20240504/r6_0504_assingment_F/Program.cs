@@ -17,7 +17,7 @@ namespace r6_0504_assingment_F {
             var ranks = new int[n + 1];
             for (var i = 0; i <= n; i++) ranks[i] = -1;
 
-            var qs = 
+            //var qs = 
             // 情報を入力
             for (var i = 0; i < m; i++) {
                 var cs2 = Console.ReadLine()?.Split(' ');
