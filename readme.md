@@ -17,8 +17,8 @@ books フォルダーには書籍と連動した練習問題の解答を格納しています
 
 ## サイト
 
-https://atcoder.jp/contests/math-and-algorithm
-https://atcoder.jp/contests/tessoku-book
+- https://atcoder.jp/contests/math-and-algorithm
+- https://atcoder.jp/contests/tessoku-book
 
 
 ## 使い方
