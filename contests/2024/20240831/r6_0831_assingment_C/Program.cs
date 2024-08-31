@@ -21,23 +21,15 @@ namespace r6_0831_assingment_C {
             // 長さが1 と 2 の数列分を計算
             long result = 2 * n - 1; // n + (n - 1);
 
-            // メモを作成+初期化
-            var memo = new Dictionary<string, int>();
-            for (var i = 1; i < n; i++) {
-                memo.Add($"{i}-{i + 1}", sequence[i+1] - sequence[i]);
-            }
+            if (n >= 3) {
+                for (var startPosition = 1; startPosition < n; startPosition++) {
+                    var diff = sequence[startPosition + 1] - sequence[startPosition];
+                    for (var len = 3; len + startPosition - 1 <= n; len++) {
+                        var lastDiff = sequence[startPosition + len - 1] - sequence[startPosition + len - 2];// 差分
+                        if (diff != lastDiff) break;
+                        result++;
+                    }
 
-
-            for (var len = 3; len <= n; len++) {
-                for (var startPosition = 1; startPosition <= n - len + 1; startPosition++) {
-                    var key = $"{startPosition}-{startPosition + len - 2}";
-                    if (memo.ContainsKey(key)) {
-                        var diff = sequence[startPosition + len - 1] - sequence[startPosition + len - 2];// 差分
-                        if (memo[key] == diff) {
-                            result++;
-                            memo.Add($"{startPosition}-{startPosition + len - 1}", diff);
-                        }
-                    } else continue;
                 }
             }
             Console.WriteLine(result);
