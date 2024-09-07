@@ -19,17 +19,30 @@ namespace r6_0831_assingment_C {
             }
 
             // 長さが1 と 2 の数列分を計算
-            long result = 2 * n - 1; // n + (n - 1);
+            //long result = 2 * n - 1; // n + (n - 1);
+            long result = n;
 
             if (n >= 3) {
-                for (var startPosition = 1; startPosition < n; startPosition++) {
-                    var diff = sequence[startPosition + 1] - sequence[startPosition];
-                    for (var len = 3; len + startPosition - 1 <= n; len++) {
-                        var lastDiff = sequence[startPosition + len - 1] - sequence[startPosition + len - 2];// 差分
-                        if (diff != lastDiff) break;
-                        result++;
-                    }
+                var memo = new Dictionary<int, int>();
+                var diffData = new List<int> { -1 }; // 最初のデータは使わない
+                for (var i = 1; i < n; i++) {
+                    diffData.Add(sequence[i + 1] - sequence[i]);
+                }
 
+                for (var i = 1; i < n; i++) {
+                    var d_base = diffData[i];
+                    var last = n;
+                    for (var j = i + 1; j < n; j++) {
+                        if (d_base != diffData[j]) {
+                            last = j - 1;
+                            break;
+                        }
+                    }
+                    memo.Add(i, last);
+                }
+
+                foreach (var m in memo) {
+                    result += m.Value - m.Key;
                 }
             }
             Console.WriteLine(result);
