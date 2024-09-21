@@ -8,13 +8,14 @@ namespace r6_0921_assingment_C {
         /// </summary>
         /// <remarks></remarks>
         static void Main() {
-            const string TC = "ABC";
             var condition1 = Console.ReadLine()?.Split(' ');
             if (condition1 == null) return;
             var n = Convert.ToInt32(condition1[0]);
             var q = Convert.ToInt32(condition1[1]);
 
             var strc = Console.ReadLine()?.ToArray();
+
+            var baseCnt = CountString(strc);
 
             var result = new StringBuilder();
             for (var i = 0; i < q; i++) {
@@ -23,37 +24,56 @@ namespace r6_0921_assingment_C {
                 var x = Convert.ToInt32(conditions2[0]) - 1;
                 var c = conditions2[1][0];
 
-                strc[x] = c;
-
-                result.AppendLine(CountString(strc, TC).ToString());
+                var diff = CheckString(ref strc, x, c);
+                baseCnt += diff;
+                result.AppendLine(baseCnt.ToString());
             }
             Console.WriteLine(result.ToString());
         }
 
-        static int CountString(char[] strc, string ts) {
+        static int CountString(char[] strc) {
             var cnt = 0;
-            var c1 = ts[0];
-            var c2 = ts[1];
-            var c3 = ts[2];
 
             var i = 0;
             while (i < strc.Length - 2) {
-                if (strc[i] != c1) {
+                if (strc[i] != 'A') {
                     i++;
                     continue;
                 }
-                if (strc[i + 1] != c2) {
-                    i += strc[i + 1] == c1 ? 1 : 2;
+                if (strc[i + 1] != 'B') {
+                    i += strc[i + 1] == 'A' ? 1 : 2;
                     continue;
                 }
-                if (strc[i + 2] != c3) {
-                    i += strc[i + 2] == c1 ? 2 : 3;
+                if (strc[i + 2] != 'C') {
+                    i += strc[i + 2] == 'A' ? 2 : 3;
                     continue;
                 }
                 cnt++;
                 i += 3;
             }
             return cnt;
+        }
+
+        static int CheckString(ref char[] strc, int pos, char newc) {
+            var start = pos - 2;
+            if (start < 0) start = 0;
+
+            var end = pos + 2;
+            if (strc.Length - 1 < end) end = strc.Length - 1;
+
+            var orgS = new StringBuilder();
+            for(var i = start; i <= end; i++) {
+                orgS.Append(strc[i]);
+            }
+            var orgCnt = CountString(orgS.ToString().ToArray());
+
+            strc[pos] = newc;
+            var newS = new StringBuilder();
+            for(var i = start; i <= end; i++) {
+                newS.Append(strc[i]);
+            }
+            var newCnt = CountString(newS.ToString().ToArray());
+            return newCnt - orgCnt;
         }
     }
 }
