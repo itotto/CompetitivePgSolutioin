@@ -10,43 +10,43 @@ namespace r6_1130_assingment_C {
             var conditions1 = Console.ReadLine()?.Split(' ');
             if (conditions1 == null) return;
             var countOfPersons = Convert.ToInt32(conditions1[0]);
-            var countOfSushi = Convert.ToInt32(conditions1[1]);
 
             // 閾値を入力
-            var thresholds = new List<int>();
-            var positions = new List<int>();
+            var thresholds = new int[countOfPersons];
+            var positions = new int[countOfPersons];
 
             var minValue = int.MaxValue;
 
+            var idx = 0;
             var conditions2 = Console.ReadLine()?.Split(' ');
-            if (conditions2 == null) return;
             for (var i = 0; i < conditions2.Length; i++) {
                 var v = Convert.ToInt32(conditions2[i]);
-                if (minValue > v) {
-                    thresholds.Add(v);
-                    positions.Add(i + 1);
-                    minValue = v;
-                }
+                if (minValue <= v) continue;
+
+                thresholds[idx] = v;
+                positions[idx++] = i + 1;
+                minValue = v;
             }
 
-            var memo = new Dictionary<int, int>();
+            var memo = new Dictionary<string, int>();
 
             var conditions3 = Console.ReadLine()?.Split(' ');
-            if (conditions3 == null) return;
-            foreach (var c in conditions3) {
-                var v = Convert.ToInt32(c);
-
-                if (v < minValue) {
-                    Console.WriteLine(-1);
+            foreach (var str in conditions3) {
+                if (memo.ContainsKey(str)) {
+                    Console.WriteLine(memo[str]);
                 } else {
-                    // メモを使う
-                    if (memo.ContainsKey(v)) {
-                        Console.WriteLine(memo[v]);
+                    var v = Convert.ToInt32(str);
+
+                    if (v < minValue) {
+                        Console.WriteLine(-1);
+                        memo.Add(str, -1);
                     } else {
-                        for (var i = 0; i < thresholds.Count; i++) {
+                        // メモを使う
+                        for (var i = 0; i < idx; i++) {
                             if (thresholds[i] > v) continue;
-                            memo.Add(v, positions[i]);
-                            Console.WriteLine(positions[i]);
+                            var p = positions[i];
+                            memo.Add(str, p);
+                            Console.WriteLine(p);
                             break;
                         }
                     }
