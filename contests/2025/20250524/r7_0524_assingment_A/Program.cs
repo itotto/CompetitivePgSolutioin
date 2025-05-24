@@ -18,12 +18,9 @@ namespace r7_0524_assingment_A {
             var lastDiff = double.MaxValue;
             for (var i = 0; i <= 407; i++) {
                 var diff = (d > i) ? d - i : i - d;
-                if (lastDiff > diff) {
-                    result = i;
-                    lastDiff = diff;
-                } else {
-                    break;
-                }
+                if (lastDiff <= diff) break;
+                result = i;
+                lastDiff = diff;
             }
             Console.WriteLine(result);
         }
