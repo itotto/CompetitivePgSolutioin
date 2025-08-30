@@ -44,11 +44,11 @@ namespace r7_0517_assingment_D {
                 switch (q2) {
                     case 1:
                         result.AppendLine(rows[q1].ToString());
-                        rows[q1] = 0;
+                        //rows[q1] = 0;
                         break;
                     case 2:
                         result.AppendLine(columns[q1].ToString());
-                        columns[q1] = 0;
+                        //columns[q1] = 0;
                         break;
                 }
             }
