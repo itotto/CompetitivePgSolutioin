@@ -1,4 +1,4 @@
-﻿:namespace _2_Rotate {
+﻿namespace _2_Rotate {
     internal class Program {
         /// <summary>
         /// A - Rotate
