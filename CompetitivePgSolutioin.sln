@@ -88,6 +88,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17_Unexpressed", "books\AtC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18_SumOfProductOfPairs", "books\AtCoder50\18_SumOfProductOfPairs\18_SumOfProductOfPairs.csproj", "{7102D14A-C263-4989-8A6E-6BB6F052C3F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19_WalkingTakahashi", "books\AtCoder50\19_WalkingTakahashi\19_WalkingTakahashi.csproj", "{3A371633-F383-4577-A5D6-D95C707417C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -222,6 +224,10 @@ Global
 		{7102D14A-C263-4989-8A6E-6BB6F052C3F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7102D14A-C263-4989-8A6E-6BB6F052C3F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7102D14A-C263-4989-8A6E-6BB6F052C3F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A371633-F383-4577-A5D6-D95C707417C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A371633-F383-4577-A5D6-D95C707417C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A371633-F383-4577-A5D6-D95C707417C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A371633-F383-4577-A5D6-D95C707417C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -264,6 +270,7 @@ Global
 		{772140A5-2239-4D8C-81C6-77EB946A7B31} = {A6887570-94E7-4A96-B680-C171A8DDF875}
 		{F729D08B-D0DC-45E6-9C20-EEA986F47C9E} = {B2A8A1CF-6155-4362-9E98-8CC2F590B3A3}
 		{7102D14A-C263-4989-8A6E-6BB6F052C3F5} = {B2A8A1CF-6155-4362-9E98-8CC2F590B3A3}
+		{3A371633-F383-4577-A5D6-D95C707417C9} = {B2A8A1CF-6155-4362-9E98-8CC2F590B3A3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E61BC755-28EF-4D04-B147-54A75086C516}

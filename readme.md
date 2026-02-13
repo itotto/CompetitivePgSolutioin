@@ -1,27 +1,30 @@
-# ƒvƒƒWƒFƒNƒg–¼
+ï»¿# ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆå
 
-‚±‚ÌƒvƒƒWƒFƒNƒg‚Í AtCoder ‚Ì–â‘è‚ğ‰ğ‚¢‚½—š—ğŠÇ—‚·‚é‚½‚ß‚ÌƒvƒƒWƒFƒNƒg‚Å‚·  
+ã“ã®ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã¯ AtCoder ã®å•é¡Œã‚’è§£ã„ãŸå±¥æ­´ç®¡ç†ã™ã‚‹ãŸã‚ã®ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã§ã™
 
-## ƒTƒCƒg
+## ã‚µã‚¤ãƒˆ
 
 https://atcoder.jp/home
 
 
-# \‘¢
 
-contests ƒtƒHƒ‹ƒ_[‚É‚Í Beginner Contest ‚Ì‰ñ“š‚ğ“ú•t‚²‚Æ‚É•ª‚¯‚ÄŠi”[‚µ‚Ä‚¢‚Ü‚·  
-heuristiccontests ƒtƒHƒ‹ƒ_[‚É‚Í Heuristic Contest ‚Ì‰ñ“š‚ğŠÇ—‚µ‚Ä‚¢‚Ü‚·  
+# æ§‹é€ 
 
-books ƒtƒHƒ‹ƒ_[‚É‚Í‘Ğ‚Æ˜A“®‚µ‚½—ûK–â‘è‚Ì‰ğ“š‚ğŠi”[‚µ‚Ä‚¢‚Ü‚·  
+contests ãƒ•ã‚©ãƒ«ãƒ€ãƒ¼ã«ã¯ Beginner Contest ã®å›ç­”ã‚’æ—¥ä»˜ã”ã¨ã«åˆ†ã‘ã¦æ ¼ç´ã—ã¦ã„ã¾ã™  
+heuristiccontests ãƒ•ã‚©ãƒ«ãƒ€ãƒ¼ã«ã¯ Heuristic Contest ã®å›ç­”ã‚’ç®¡ç†ã—ã¦ã„ã¾ã™
 
-
-## ƒTƒCƒg
-
-- https://atcoder.jp/contests/math-and-algorithm
-- https://atcoder.jp/contests/tessoku-book
+books ãƒ•ã‚©ãƒ«ãƒ€ãƒ¼ã«ã¯æ›¸ç±ã¨é€£å‹•ã—ãŸç·´ç¿’å•é¡Œã®è§£ç­”ã‚’æ ¼ç´ã—ã¦ã„ã¾ã™
 
 
-## g‚¢•û
 
-‚±‚Ìƒ\ƒŠƒ…[ƒVƒ‡ƒ“‚Ìƒrƒ‹ƒh‚Í Windows11 + Visual Studio 2022 ‚Ås‚Á‚Ä‚¢‚Ü‚·B
+## ã‚µã‚¤ãƒˆ
+
+* https://atcoder.jp/contests/math-and-algorithm
+* https://atcoder.jp/contests/tessoku-book
+
+
+
+## ä½¿ã„æ–¹
+
+ã“ã®ã‚½ãƒªãƒ¥ãƒ¼ã‚·ãƒ§ãƒ³ã®ãƒ“ãƒ«ãƒ‰ã¯ Windows11 + Visual Studio 2022 ã§è¡Œã£ã¦ã„ã¾ã™ã€‚
 
