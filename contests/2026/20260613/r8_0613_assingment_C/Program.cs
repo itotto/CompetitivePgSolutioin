@@ -32,8 +32,8 @@ namespace r8_0613_assingment_C {
             // 昇順に並び替える
             //coordinates.Sort((x, y) => x.Key - y.Key > 0 ? 1 : x.Value - y.Value);
             //coordinates.Sort((x, y) => x.Key - y.Key);
-            coordinates.OrderBy((x,y) => x.Key - y.Key)
-                        .ThenBy
+            //coordinates.OrderBy((x,y) => x.Key - y.Key)
+            //            .ThenBy
 
             var count = 0 ;
 
